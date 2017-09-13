@@ -1,7 +1,28 @@
+
+#map_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  #map {
+    height: 62vh;
+    width: 93%;
+    border: solid grey 2px;
+   }
+
+   .map-title{
+     margin-top: 40px;
+   }
+
+
+
+
 .map-search-container {
 
     border: solid black 2px;
-    margin-top: 45vh;
+    margin-top: 3vh;
     height: 500px;
 
   }

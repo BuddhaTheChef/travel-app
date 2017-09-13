@@ -18,15 +18,11 @@ angular.module('travelApp', ['ui.router'])
         templateUrl: "./views/spots.html"
 
     })
-    .state('booked',{
-        url:'/booked/:id',
-        templateUrl: "./views/booked.html"
 
-    })
     .state('map',{
         url:'/map',
-        templateUrl: "./views/map.html"
-
+        templateUrl: "./views/map.html",
+        controller:"mapCtrl"
     });
 
 
