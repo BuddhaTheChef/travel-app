@@ -1,0 +1,18 @@
+.home-header {
+font-size:60px;
+color: red;
+
+}
+
+.about-content{
+  border: solid black 2px;
+  margin-top: 55vh;
+  height: 500px;
+}
+
+.home-about-header {
+  margin-top: 10vh;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 70px;
+}
