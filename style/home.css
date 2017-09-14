@@ -26,3 +26,25 @@ top: 25%;
   text-align: left;
   margin-left: 70px;
 }
+
+.search-bar-home{
+  height: 30px;
+  width: 800px;
+  font-size: 20px;
+}
+
+.btn-primary{
+  font-size: 20px;
+  color: white;
+  background-color:rgb(121, 151, 216);
+  border: solid white 2px;
+  height: 35px;
+  width: 100px;
+  padding-top: 4px;
+  margin-left: 30px
+}
+
+.searchBar{
+  width: 100vw;
+  margin-top: 300px;
+}

@@ -1,7 +1,17 @@
 <section class="view-container">
   <div class= "hero-image">
   <h1 class="home-header">Greetings, Traveler</h1>
+  <div class="searchBar">
+    <form ui-sref="map({attraction:location})">
+    <input type="text" class="search-bar-home form-control" ng-model="location" placeholder="Enter City" />
+    <button class="search-button btn btn-primary" ui-sref="map({attraction:location})"> Submit </button>
+      </form>
   </div>
+
+  </div>
+
+
+
 
   <div class = "about-content">
     <h2 class="home-about-header">About</h2>

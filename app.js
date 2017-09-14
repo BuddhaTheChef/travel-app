@@ -3,7 +3,8 @@ angular.module('travelApp', ['ui.router'])
       $stateProvider
       .state('home',{
         url:'/',
-        templateUrl: "./views/home.html"
+        templateUrl: "./views/home.html",
+        controller: "homeCtrl"
     })
     .state('list',{
         url:'/list',
@@ -20,7 +21,7 @@ angular.module('travelApp', ['ui.router'])
     })
 
     .state('map',{
-        url:'/map',
+        url:'/map/:attraction',
         templateUrl: "./views/map.html",
         controller:"mapCtrl"
     });
