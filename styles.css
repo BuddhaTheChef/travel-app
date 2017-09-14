@@ -7,21 +7,25 @@ body{
 ul {
   margin: 10px;
   margin-bottom: 0;
+
 }
 
 .home-page-top-container {
     width: 100%;
-    height: 5vh;
+    height: 6vh;
     min-height: 0px;
     position: relative;
-    background-color:grey;  /*center no-repeat;*/
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.home-page-top-container header {
+  height: 8vh;
+  background: grey;
 
 
 }
-
 
 
 .home-page-top-container nav ul {
@@ -36,4 +40,23 @@ ul {
     text-decoration-style: none;
     list-style-type: none;
     padding: 0;
+    margin-top: -15px;
+}
+
+.logo img {
+  height: 100px;
+  position: relative;
+  z-index: 100;
+  
+  transform: translateY(21px);
+  border: 2px solid ;
+   border-radius: 50%;
+
+}
+
+/*==============================================================================
+                                    Views
+==============================================================================*/
+.view-container {
+  transform: translateY(-15px);
 }

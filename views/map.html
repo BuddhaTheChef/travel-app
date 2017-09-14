@@ -1,4 +1,6 @@
 
+<section class="view-container">
+<div class="map-background">
 
 
   <h3 class="map-title">Must See Spots</h3>
@@ -7,7 +9,25 @@
   <div id="map"></div>
   </div>
 
+</div>
 
 <div class="map-search-container">
-   <p class="map-results">tourist attraction listed items here</p>
-</div>
+  <h3 class="map-results">Attraction Nearby</h3>
+
+  <div class="attContain" ng-repeat="business in businesses">
+
+    <img class="mapImg" ng-src="{{business.image_url}}" />
+    <h1 class="attName">{{business.name}}</h1>
+    <div class="attBox">
+
+      <h2 class="attNum">Phone Number: {{business.display_phone}}</h2>
+      <h1 class="attLocation">{{business.location.address1}}</h1>
+      <h2 class="attRate">Rating: {{business.rating}}</h2>
+
+
+    </div>
+
+
+  </div>
+  <hr />
+  </section>
