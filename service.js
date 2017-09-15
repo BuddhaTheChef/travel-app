@@ -13,35 +13,15 @@ var client_secret = 'client_secret=bLFJobpxWtOFwtLie9DuYy85YuU9fFkUKhNrhhhn2FBD4
       access_token: access_token
     }).then(response => {
       console.log(response.data.businesses);
-        // $rootScope.$emit('attraction', attraction){
-        //   attraction = response.data.businesses
-        // }
+
         return response.data.businesses;
     });
   };
 
 
+this.attractionList = [];
 
-// this.getSomething(location).then(function(response){
-//   console.log('location searched', location);
-//
-//   var results = response.data.businesses;
-//
-//   for(var i = 0; i < results.length; i++){
-//
-//      var obj = {
-//        Name: results[i].name,
-//        Image: results[i].image_url,
-//        Phone: results[i].display_phone,
-//        Rating: results[i].rating,
-//        Locations: results[i].location.address1
-//      }
-//     //  console.log(obj)
-//
-//   }
-//
-// });
-//
+
 
 
 

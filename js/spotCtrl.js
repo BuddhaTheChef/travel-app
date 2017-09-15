@@ -12,6 +12,11 @@ var city = $stateParams.city
 
 
 
+    $scope.addToAttractionList = function(business){
+      mainSrv.attractionList.push(business)
+      console.log(mainSrv.attractionList)
+    }
+//////////////////////////////////////////////////////oncoming carosal///////////////////////////////////////////////////////////////////////
 
 
-})
+});

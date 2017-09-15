@@ -8,7 +8,8 @@ angular.module('travelApp', ['ui.router'])
     })
     .state('list',{
         url:'/list',
-        templateUrl: "./views/list.html"
+        templateUrl: "./views/list.html",
+        controller: "listCtrl"
     })
     .state('about',{
         url:'/about',

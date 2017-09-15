@@ -14,4 +14,13 @@
 </header>
 <div>
   <h1>Top 10 list </h1>
+
+<div ng-repeat="business in attractionList">
+  {{business}} <br />
+  <h1>{{business.name}}</h1>
+  <br />
+  <img ng-src="{{business.image_url}}" />
+  <hr />
+</div>
+
 </div>
