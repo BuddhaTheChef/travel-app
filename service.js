@@ -13,6 +13,14 @@ var client_secret = 'client_secret=bLFJobpxWtOFwtLie9DuYy85YuU9fFkUKhNrhhhn2FBD4
       access_token: access_token
     }).then(response => {
       console.log(response.data.businesses);
+      this.businessesMarkers = response.data.businesses;
+      console.log(response.data.businesses.map(location => {
+        return {
+          location:location.coordinates,
+           name: location.name
+        }
+      } ))
+
 
         return response.data.businesses;
     });

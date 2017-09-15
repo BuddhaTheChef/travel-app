@@ -2,13 +2,14 @@
     <nav>
         <ul>
             <!--Navigation section, this is where you will put your ui-sref's so you can naviagte to different views -->
-            <li ui-sref="map"><a>Map</a></li>
-            <li ui-sref="spots"><a>Spots</a></li>
+            <!-- <li ui-sref="map"><a>Map</a></li> -->
+
             <div ui-sref= "home" class="logo">
                <img src="./poop.jpg" />
             </div>
+            <li ui-sref="spots"><a>Spots</a></li>
             <li ui-sref="list"><a>LIST</a></li>
-            <li ui-sref="about"><a>ABOUT</a></li>
+            <li ng-click="scrollAbout()"><a>ABOUT</a></li>
         </ul>
     </nav>
 </header>
@@ -28,7 +29,13 @@
 
 
 
-  <div class = "about-content">
+  <div id="about-bot" class="about-content">
     <h2 class="home-about-header">About</h2>
+<p class="about-text">
+  <br />
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien. Cursus eget nunc scelerisque viverra mauris in aliquam. Volutpat commodo sed egestas egestas fringilla phasellus. Senectus et netus et malesuada fames. Proin sed libero enim sed faucibus. Ac feugiat sed lectus vestibulum. Viverra mauris in aliquam sem. Varius duis at consectetur lorem donec massa sapien. Praesent elementum facilisis leo vel fringilla est. Habitasse platea dictumst quisque sagittis purus. Mauris sit amet massa vitae tortor condimentum. Sed viverra tellus in hac habitasse platea dictumst vestibulum. At volutpat diam ut venenatis tellus in. Mus mauris vitae ultricies leo integer malesuada nunc vel. Aliquet nec ullamcorper sit amet risus nullam. Magna etiam tempor orci eu lobortis elementum nibh tellus. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Mauris augue neque gravida in fermentum et sollicitudin ac orci. <br />
+  <br />
+Dictum fusce ut placerat orci nulla pellentesque. Varius morbi enim nunc faucibus. Eget dolor morbi non arcu risus quis. Nec sagittis aliquam malesuada bibendum arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Rhoncus dolor purus non enim. Adipiscing commodo elit at imperdiet dui. Auctor neque vitae tempus quam pellentesque nec. Amet dictum sit amet justo donec enim diam vulputate ut. Sit amet commodo nulla facilisi nullam vehicula. Elit ut aliquam purus sit. Enim sed faucibus turpis in eu mi bibendum. Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Scelerisque fermentum dui faucibus in ornare quam viverra. Ultrices mi tempus imperdiet nulla. Amet est placerat in egestas erat imperdiet sed euismod. Fermentum leo vel orci porta non pulvinar. Mauris vitae ultricies leo integer malesuada nunc vel. Quis eleifend quam adipiscing vitae proin sagittis nisl.
+</p>
   </div>
 </section>

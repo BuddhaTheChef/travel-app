@@ -12,8 +12,8 @@ angular.module('travelApp', ['ui.router'])
         controller: "listCtrl"
     })
     .state('about',{
-        url:'/about',
-        templateUrl: "./views/about.html"
+        url:'/',
+        templateUrl: "./views/home.html"
     })
     .state('spots',{
         url:'/spots/:city',

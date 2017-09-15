@@ -17,7 +17,7 @@ flex-direction: row;
 margin-top: 80px;
 margin-left: 5px;
 margin-right: 5px;
-margin-bottom: 200px;
+margin-bottom: 40px;
 border: solid black 2px;
 background-color: white;
 position: relative;
@@ -31,7 +31,7 @@ position: relative;
 }
 
 .spotBox{
-overflow: scroll;
+overflow: inherit;
 }
 
 
@@ -43,6 +43,14 @@ overflow: scroll;
     flex-direction: row;
 
     overflow: scroll;
+  }
+
+  .addButton{
+    margin-top: 50px;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    align-self: flex-end;
   }
 
 

@@ -21,7 +21,7 @@ ul {
 }
 
 .home-page-top-container header {
-  height: 8vh;
+  height: 10vh;
   background: grey;
 
 
@@ -31,7 +31,8 @@ ul {
 .home-page-top-container nav ul {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+
+  justify-content: space-around;
     align-items: center;
     font-size: 18px;
     text-transform: uppercase   ;
@@ -47,12 +48,16 @@ ul {
   height: 100px;
   position: relative;
   z-index: 100;
-  
+  justify-self: flex-start;
   transform: translateY(21px);
   border: 2px solid ;
    border-radius: 50%;
+   margin-left: 70px;
+   margin-right: 70px;
 
 }
+
+
 
 /*==============================================================================
                                     Views

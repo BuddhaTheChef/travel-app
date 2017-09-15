@@ -1,15 +1,16 @@
 <nav class="nav-bar">
   <ul>
     <!--Navigation section, this is where you will put your ui-sref's so you can naviagte to different views -->
-    <li ui-sref="map"><a>Map</a></li>
-    <li ui-sref="spots({city:theCity})"><a>Spots</a></li>
+    <!-- <li ui-sref="map"><a>Map</a></li> -->
     <div ui-sref="home" class="logo">
       <img src="./poop.jpg" />
     </div>
+    <li ui-sref="spots({city:theCity})"><a>Spots</a></li>
+
     <li ui-sref="list"><a>LIST</a></li>
     <li ui-sref="about"><a>ABOUT</a></li>
   </ul>
-</nav>
+</nav>s
 
 <!-- nav end -->
 <section class="view-container">
@@ -26,10 +27,10 @@
 
   <div class="map-search-container">
     <h3 class="map-results">Attraction Nearby</h3>
-    <div class="attContain" ng-repeat="business in businesses">
+    <div ng-click="scrollMap(marker)" id ="mapScroll" class="attContain" ng-repeat="business in businesses">
 
       <img class="mapImg" ng-src="{{business.image_url}}" />
-      <h1 class="attName">{{business.name}}</h1>
+      <h1  class="attName">{{business.name}}</h1>
       <div class="attBox">
 
         <h2 class="attNum">Phone Number: {{business.display_phone}}</h2>

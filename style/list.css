@@ -1,0 +1,37 @@
+.listHeader{
+  margin-top: 70px;
+}
+
+.listDisplay{
+
+  flex-direction: row;
+display: inline-block;
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border: solid black 2px;
+  background-color: white;
+  position: relative;
+
+}
+
+.imgList {
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  width: 290px;
+  margin-top: 0px;
+}
+
+.listName{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  flex-direction: row;
+
+
+}

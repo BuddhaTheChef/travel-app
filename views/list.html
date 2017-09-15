@@ -2,25 +2,29 @@
     <nav>
         <ul>
             <!--Navigation section, this is where you will put your ui-sref's so you can naviagte to different views -->
-            <li ui-sref="map"><a>Map</a></li>
-            <li ui-sref="spots"><a>Spots</a></li>
+            <!-- <li ui-sref="map"><a>Map</a></li> -->
             <div ui-sref= "home" class="logo">
                <img src="./poop.jpg" />
             </div>
+            <li ui-sref="spots"><a>Spots</a></li>
+
             <li ui-sref="list"><a>LIST</a></li>
             <li ui-sref="about"><a>ABOUT</a></li>
         </ul>
     </nav>
 </header>
 <div>
-  <h1>Top 10 list </h1>
+  <h1 class="listHeader">Your list </h1>
 
-<div ng-repeat="business in attractionList">
-  {{business}} <br />
-  <h1>{{business.name}}</h1>
-  <br />
-  <img ng-src="{{business.image_url}}" />
-  <hr />
+<div class="listDisplay" ng-repeat="business in attractionList">
+  <h1 class="listName">{{business.name}}</h1>
+
+  <img class="imgList" ng-src="{{business.image_url}}" />
+
+  <h3>{{business.location.address1}}</h3>
+
+  <h3>{{business.display_phone}}</h3>
+
 </div>
 
 </div>
