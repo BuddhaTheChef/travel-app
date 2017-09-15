@@ -15,9 +15,9 @@ angular.module('travelApp', ['ui.router'])
         templateUrl: "./views/about.html"
     })
     .state('spots',{
-        url:'/spots',
-        templateUrl: "./views/spots.html"
-
+        url:'/spots/:city',
+        templateUrl: "./views/spots.html",
+        controller: 'spotCtrl'
     })
 
     .state('map',{

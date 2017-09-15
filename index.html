@@ -13,10 +13,10 @@
   <body ng-controller="mainCtrl">
 
     <section class="home-page-top-container">
-          <header>
+          <!-- <header>
               <nav>
                   <ul>
-                      <!--Navigation section, this is where you will put your ui-sref's so you can naviagte to different views -->
+
                       <li ui-sref="map"><a>Map</a></li>
                       <li ui-sref="spots"><a>Spots</a></li>
                       <div ui-sref= "home" class="logo">
@@ -26,7 +26,7 @@
                       <li ui-sref="about"><a>ABOUT</a></li>
                   </ul>
               </nav>
-          </header>
+          </header> -->
 
 
 <ui-view></ui-view>
@@ -35,10 +35,11 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
-  <script src="./app.js"></script>
-  <script src="home/mainCtrl.js"></script>
-  <script src="service.js"></script>
+  <script src= "./app.js"></script>
+  <script src= "home/mainCtrl.js"></script>
+  <script src= "service.js"></script>
   <script src = "js/mapCtrl.js"></script>
   <script src = "js/homeCtrl.js"></script>
+  <script src = "js/spotCtrl.js"></script>
   </body>
 </html>

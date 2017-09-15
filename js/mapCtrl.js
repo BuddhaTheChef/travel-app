@@ -4,6 +4,8 @@ console.log($stateParams.attraction);
 var city = $stateParams.attraction
 
 mainSrv.getSomething(city).then(function(response){
+  $scope.theCity = response[0].location.city
+  console.log(response[0].location.city);
   console.log(response);
   $scope.businesses = response;
 

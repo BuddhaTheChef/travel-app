@@ -1,6 +1,74 @@
+<header>
+    <nav>
+        <ul>
+            <!--Navigation section, this is where you will put your ui-sref's so you can naviagte to different views -->
+            <li ui-sref="map"><a>Map</a></li>
+            <li ui-sref="spots"><a>Spots</a></li>
+            <div ui-sref= "home" class="logo">
+               <img src="./poop.jpg" />
+            </div>
+            <li ui-sref="list"><a>LIST</a></li>
+            <li ui-sref="about"><a>ABOUT</a></li>
+        </ul>
+    </nav>
+</header>
+
 <section class="view-container">
-  <div class="spot-container">
-   <h1 class="tempHead">Insert Spots</h1>
+
+  <div class="spot-search-container">
+
+    <div class="spotContain" ng-repeat="business in businesses">
+
+
+      <div class="spotBox">
+        <img class="spotImg" ng-src="{{business.image_url}}" />
+        <h1 class="spotName">{{business.name}}</h1>
+        <h2 class="spotNum">Phone Number: {{business.display_phone}}</h2>
+        <h1 class="spotLocation">{{business.location.address1}}</h1>
+        <h2 class="spotRate">Rating: {{business.rating}}</h2>
+
+        <!-- <button type="button" name="button" ui-sref=({id: business.id})>See more details</button> -->
+
+
+      </div>
+
+
+    </div>
+    <!-- <button class="spotButton" ng-repeat="business in businesses">HEY</button> -->
   </div>
 
+
 </section>
+
+
+
+
+
+
+
+
+<!-- <section class="view-container">
+  <div class= "hero-image">
+  <h1 class="home-header">Greetings, Traveler</h1>
+  <div class="searchBar">
+    <form ui-sref="map({attraction:location})">
+    <input type="text" class="search-bar-home form-control" ng-model="location" placeholder="Enter City" />
+    <button class="search-button btn btn-primary" ui-sref="map({attraction:location})"> Submit </button>
+      </form>
+  </div>
+
+
+
+  <h3 class="map-results">Attraction Nearby</h3>
+  <div class="attContain" ng-repeat="business in businesses">
+
+    <img class="mapImg" ng-src="{{business.image_url}}" />
+    <h1 class="attName">{{business.name}}</h1>
+    <div class="attBox">
+
+      <h2 class="attNum">Phone Number: {{business.display_phone}}</h2>
+      <h1 class="attLocation">{{business.location.address1}}</h1>
+      <h2 class="attRate">Rating: {{business.rating}}</h2>
+  </div>
+
+</section> -->

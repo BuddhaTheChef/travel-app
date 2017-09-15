@@ -5,7 +5,8 @@ angular.module('travelApp').controller('homeCtrl', function($scope, $stateParams
     mainSrv.getSomething(location).then(function(response) {
       console.log(response);
       $scope.businesses = response;
-      
+
+
 
     });
   }
