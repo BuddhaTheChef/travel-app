@@ -3,6 +3,7 @@
   height: 80vh;
   background-image: url('http://www.magic4walls.com/wp-content/uploads/2015/05/sunset-silhouette-photographer-orange-sky-travel-background.jpg');
   background-size: cover;
+  width: 100%;
 
 }
 
@@ -15,6 +16,7 @@ margin-top: 1vh;
 position: relative;
 top: 25%;
 }
+
 
 .about-content{
 
@@ -31,7 +33,7 @@ top: 25%;
 
 .search-bar-home{
   height: 30px;
-  width: 800px;
+  width: 20px;;
   font-size: 20px;
 }
 
@@ -47,9 +49,22 @@ top: 25%;
 }
 
 .searchBar{
-  width: 100vw;
+
   margin-top: 300px;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white !important;
+
 }
+
+input[type=text]:focus:not([readonly]) + label {
+            color: white;
+        }
+
+        input[type=text]:focus:not([readonly]) {
+            border-bottom: 1px solid white;
+            box-shadow: 0 1px 0 0 white;
+        }
 
 .about-text{
   font-size: 24px;

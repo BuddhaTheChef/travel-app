@@ -13,7 +13,7 @@ var city = $stateParams.city
 
 
     $scope.addToAttractionList = function(business){
-      mainSrv.attractionList.push(business)
+      mainSrv.attractionList.unshift(business)
       console.log(mainSrv.attractionList)
     }
 //////////////////////////////////////////////////////oncoming carosal///////////////////////////////////////////////////////////////////////
@@ -25,5 +25,6 @@ $scope.isClosed = function(){
     return " Sorry We're Closed"
   }
 }
+
 
 });

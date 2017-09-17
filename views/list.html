@@ -17,7 +17,7 @@
 
   <h1 class="listHeader"> Bucket list</h1>
 
-<div class="listDisplay" ng-repeat="business in attractionList">
+<div class="listDisplay" ng-repeat="business in attractionList track by $index" id=$id>
   <h1 class="listName">{{business.name}}</h1>
 
   <img class="imgList" ng-src="{{business.image_url}}" />
@@ -25,7 +25,7 @@
   <h3>{{business.location.address1}}</h3>
 
   <h3>{{business.display_phone}}</h3>
-  <button class="deleteButton" type="btn btn-danger">DELETE</button>
+  <button class="deleteButton" type="btn btn-danger" ng-click="deleteList()"> DELETE</button>
 
 </div>
 </div>

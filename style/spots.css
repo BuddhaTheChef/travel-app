@@ -41,9 +41,10 @@ transition: all .15s ease-in-out;
 }
 
 .spotName {
-  margin-top: 8px;
+  margin-top: 13px;
   text-align: center;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .spotBox{
@@ -64,7 +65,7 @@ font-size: 50px;
     height: 92vh;
     display:flex;
     flex-direction: row;
-    width: 100vw;
+    width: 101vw;
     overflow: scroll;
 
   }
@@ -83,6 +84,23 @@ font-size: 50px;
 
   }
 
+  .spotLocation {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .spotRate{
+    margin-top: 60px;
+  }
+
 
 
   /*                                          carosal                                                 */
+
+
+
+
+
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);

@@ -22,10 +22,10 @@
 
 
 
-    <div class="spotContain" ng-repeat="business in businesses">
+    <div class="spotContain" ng-repeat="business in businesses track by $index">
 
 
-      <div class="spotBox">
+      <div class="spotBox" id=$id>
         <img class="spotImg" ng-src="{{business.image_url}}" />
         <h1 class="spotName">{{business.name}}</h1>
         <h1 class="spotLocation">{{business.location.address1}}</h1>
@@ -39,10 +39,12 @@
         </h4>
 
         <h2 class="spotRate">Rating: {{business.rating}}</h2>
-
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <button class="addButton" type="button" name="button" ng-click="addToAttractionList(business)">Add to list</button>
 
 
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
       </div>
 
 
