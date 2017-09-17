@@ -16,7 +16,11 @@
 
 <section class="view-container">
 
+<h1 class="spotTitle">Places To Visit</h1>
+
   <div class="spot-search-container">
+
+
 
     <div class="spotContain" ng-repeat="business in businesses">
 
@@ -24,8 +28,16 @@
       <div class="spotBox">
         <img class="spotImg" ng-src="{{business.image_url}}" />
         <h1 class="spotName">{{business.name}}</h1>
-        <h2 class="spotNum">Phone Number: {{business.display_phone}}</h2>
         <h1 class="spotLocation">{{business.location.address1}}</h1>
+        <p class="spotNum">Phone Number: {{business.display_phone}}</p>
+
+        <p>
+          {{business.categories.0.title}}
+        </p>
+        <h4 class="spotIsClosed">
+          Sorry We're Closed: {{business.is_closed}}
+        </h4>
+
         <h2 class="spotRate">Rating: {{business.rating}}</h2>
 
         <button class="addButton" type="button" name="button" ng-click="addToAttractionList(business)">Add to list</button>

@@ -17,6 +17,13 @@ var city = $stateParams.city
       console.log(mainSrv.attractionList)
     }
 //////////////////////////////////////////////////////oncoming carosal///////////////////////////////////////////////////////////////////////
-
+$scope.isClosed = function(){
+  if(business.is_closed === false){
+    return "We Are Open"
+  }
+  else if(business.is_closed === true){
+    return " Sorry We're Closed"
+  }
+}
 
 });

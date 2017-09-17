@@ -28,14 +28,15 @@
   <div class="map-search-container">
     <h3 class="map-results">Attraction Nearby</h3>
     <div ng-click="scrollMap(marker)" id ="mapScroll" class="attContain" ng-repeat="business in businesses">
-
+      <div class="mapImgContain">
       <img class="mapImg" ng-src="{{business.image_url}}" />
+      </div>
+
       <h1  class="attName">{{business.name}}</h1>
       <div class="attBox">
 
         <h2 class="attNum">Phone Number: {{business.display_phone}}</h2>
         <h1 class="attLocation">{{business.location.address1}}</h1>
-        <h2 class="attRate">Rating: {{business.rating}}</h2>
 
         <!-- <button type="button" name="button" ui-sref=({id: business.id})>See more details</button> -->
 

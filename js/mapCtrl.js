@@ -82,10 +82,6 @@ console.log(infowindow)
 }
 
 
-$scope.scrollMap = function(marker){
-  $location.hash("mapScroll");
-  $anchorScroll();
-}
 
 
  });

@@ -21,7 +21,8 @@ ul {
 }
 
 .home-page-top-container header {
-  height: 10vh;
+  height: 9vh;
+  width: 100vw;
   background: grey;
 
 
@@ -53,8 +54,63 @@ ul {
   border: 2px solid ;
    border-radius: 50%;
    margin-left: 70px;
-   margin-right: 70px;
+   margin-right: 287px;
+   z-index: 100;
+   margin-bottom: 17px;
 
+}
+/*////*/
+
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+li:hover {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/*li:last-child {
+  border-right: none;
+}*/
+
+li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li a:hover {
+  color: #666;
+}
+
+li.active a {
+  font-weight: bold;
+  color: #333;
 }
 
 

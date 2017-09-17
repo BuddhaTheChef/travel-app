@@ -1,5 +1,7 @@
 .nav-bar{
   background-color: grey;
+  height: 10vh;
+  width: 100vw;
 }
 
 
@@ -30,6 +32,7 @@
    }
 
    .map-background{
+     width: 100%;
      margin-top: -30px;
      position: relative;
      background-color: rgb(119, 137, 175);
@@ -38,12 +41,16 @@
 
    }
 
+.mapImgContain{
+  width:250px;
+}
+
 .mapImg{
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 15px;
   height: 150px;
-  width: 250px;
+  width: 100%;
 
   ;
 }
@@ -59,8 +66,8 @@ position: relative;
 }
 
 .attName {
-  margin-top: 8px;
-  margin-left: 25px;
+  margin-top: 57px;
+  margin-left: 58px;
   font-size: 40px;
   margin-right: 10vw;
   text-align: left;

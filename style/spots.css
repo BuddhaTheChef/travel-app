@@ -11,29 +11,52 @@
   ;
 }
 
-.spotContain{
+.spotContain:hover{
 display: flex;
 flex-direction: row;
-margin-top: 80px;
+margin-top: 40px;
 margin-left: 5px;
 margin-right: 5px;
 margin-bottom: 40px;
 border: solid black 2px;
 background-color: white;
 position: relative;
+transform: scale(1);
+z-index: 5;
+}
 
+
+
+.spotContain{
+display: flex;
+flex-direction: row;
+margin-top: 200px;
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 200px;
+border: solid black 2px;
+background-color: white;
+position: relative;
+transition: all .15s ease-in-out;
 }
 
 .spotName {
   margin-top: 8px;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .spotBox{
-overflow: inherit;
+overflow: hidden;
+
 }
 
+.spotTitle{
+position: absolute;
+left: 40vw;
+top: 15px;
+font-size: 50px;
+}
 
 .spot-search-container {
   background-color:#7789AF;
@@ -41,8 +64,9 @@ overflow: inherit;
     height: 92vh;
     display:flex;
     flex-direction: row;
-
+    width: 100vw;
     overflow: scroll;
+
   }
 
   .addButton{
@@ -51,8 +75,13 @@ overflow: inherit;
     padding: 10px;
     width: 200px;
     align-self: flex-end;
-  }
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: silver;
 
+  }
 
 
 

@@ -13,8 +13,9 @@
         </ul>
     </nav>
 </header>
-<div>
-  <h1 class="listHeader">Your list </h1>
+<div class="listHeroImage">
+
+  <h1 class="listHeader"> Bucket list</h1>
 
 <div class="listDisplay" ng-repeat="business in attractionList">
   <h1 class="listName">{{business.name}}</h1>
@@ -24,7 +25,7 @@
   <h3>{{business.location.address1}}</h3>
 
   <h3>{{business.display_phone}}</h3>
+  <button class="deleteButton" type="btn btn-danger">DELETE</button>
 
 </div>
-
 </div>

@@ -1,21 +1,44 @@
+
+.nav-bar{
+  background-color: grey;
+  height: 11vh;
+  width: 100vw;
+}
+
+
+.listHeroImage{
+  padding-top: 1px;
+
+  width: 100%;
+  background: url("http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150534733642240?6159824715")no-repeat center center fixed;
+  background-size: cover;
+ z-index: -10;
+ position: absolute;
+}
+
 .listHeader{
   margin-top: 70px;
+  font-size: 50px;
+  color:rgb(119, 137, 175);
+text-shadow:2px 2px 10px black;
 }
 
 .listDisplay{
 
   flex-direction: row;
-display: inline-block;
-  width: 300px;
+display: inline-grid;
   padding-top: 10px;
   padding-bottom: 30px;
-  margin-top: 0px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 50px;
   border: solid black 2px;
   background-color: white;
   position: relative;
+  height: 400px;
+  width: 320px;
+
 
 }
 
@@ -25,13 +48,24 @@ display: inline-block;
   height: 170px;
   width: 290px;
   margin-top: 0px;
+  margin-left:14px;
+  margin-right:10px;
 }
 
 .listName{
-  margin-top: 0px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   text-align: center;
   flex-direction: row;
+}
 
-
+.deleteButton{
+  width: 90px;
+  height: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
