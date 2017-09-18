@@ -1,7 +1,8 @@
 .nav-bar{
-  background-color: grey;
+ background:linear-gradient(to bottom,rgba(44,62,80,1),rgba(255,255,255, 0) 90%);;
   height: 10vh;
   width: 100vw;
+
 }
 
 
@@ -15,8 +16,19 @@
   #map {
     height: 62vh;
     width: 93%;
-    border: solid grey 2px;
+    border: solid grey px;
+
    }
+
+   #map:hover {
+     height: 62vh;
+     width: 93%;
+     border-top: solid grey 2px;
+     border-left: solid grey 1px;
+     border-right: solid grey 5px;
+     border-bottom: solid grey 5px;
+
+    }
 
 
    .map-title{
@@ -35,7 +47,7 @@
      width: 100%;
      margin-top: -30px;
      position: relative;
-     background-color: rgb(119, 137, 175);
+    background-color: whitesmoke;
      padding-bottom:3vh;
      background-size: cover;
 
@@ -83,7 +95,7 @@ margin-right: 25px;
 
 
 .map-search-container {
-  background-color: grey;
+  background-color: #8e9eab;
     border: solid black 2px;
     height: 500px;
     overflow: scroll;
@@ -99,4 +111,5 @@ li{
 
 .map-results {
   margin-top: 10px;
+  text-shadow: 2px 3px 5px white;
 }

@@ -14,20 +14,19 @@
 .spotContain:hover{
 display: flex;
 flex-direction: row;
-margin-top: 40px;
-margin-left: 5px;
-margin-right: 5px;
-margin-bottom: 40px;
+margin-top: 23px;
 border: solid black 2px;
 background-color: white;
 position: relative;
 transform: scale(1);
 z-index: 5;
+height: 93%;
 }
 
 
 
 .spotContain{
+  border-radius: 3%;
 display: flex;
 flex-direction: row;
 margin-top: 200px;
@@ -37,7 +36,7 @@ margin-bottom: 200px;
 border: solid black 2px;
 background-color: white;
 position: relative;
-transition: all .15s ease-in-out;
+transition: all .25s ease-in-out;
 }
 
 .spotName {
@@ -49,7 +48,9 @@ transition: all .15s ease-in-out;
 
 .spotBox{
 overflow: hidden;
-
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .spotTitle{
@@ -60,7 +61,7 @@ font-size: 50px;
 }
 
 .spot-search-container {
-  background-color:#7789AF;
+  background-color:rgba(142, 158, 171,0.1);
     margin-top: 10px;
     height: 92vh;
     display:flex;
@@ -71,26 +72,42 @@ font-size: 50px;
   }
 
   .addButton{
-    margin-top: 50px;
-    align-items: center;
+    margin-top: ;
     padding: 10px;
-    width: 200px;
-    align-self: flex-end;
-    position: absolute;
-    bottom: 35px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: silver;
+    width: 100px;
 
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 13px;
+    border-radius: 13%;
+    transition: all .25s ease-in-out;
+  }
+
+  .addButton:hover{
+    margin-top: ;
+    padding: 10px;
+    width: 100px;
+    transform: scale(1.2);
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 13px;
+    border-radius: 13%;
+
+
+  }
+
+
+  .centerButton {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .spotLocation {
     font-size: 20px;
-    margin-top: 40px;
   }
 
   .spotRate{
-    margin-top: 60px;
   }
 
 

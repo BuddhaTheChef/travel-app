@@ -8,7 +8,7 @@
             </div>
             <li ui-sref="spots"><a>Spots</a></li>
 
-            <li ui-sref="list"><a>LIST</a></li>
+            <li ui-sref="list"><a>your LIST</a></li>
             <li ui-sref="about"><a>ABOUT</a></li>
         </ul>
     </nav>
@@ -40,7 +40,11 @@
 
         <h2 class="spotRate">Rating: {{business.rating}}</h2>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="centerButton">
+
         <button class="addButton" type="button" name="button" ng-click="addToAttractionList(business)">Add to list</button>
+
+      </div>
 
 
 

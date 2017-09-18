@@ -14,13 +14,14 @@ text-shadow: 2px 2px  black;
 color: white;
 margin-top: 1vh;
 position: relative;
-top: 25%;
+top: -500px;
 }
 
-
 .about-content{
-
+  z-index: 2;
   height: 80vh;
+  position: absolute;
+
 }
 
 .home-about-header {
@@ -29,11 +30,12 @@ top: 25%;
   text-align: left;
   margin-left: 90px;
   margin-right: 90px;
+
 }
 
 .search-bar-home{
   height: 30px;
-  width: 20px;;
+  width: 800px;
   font-size: 20px;
 }
 
@@ -49,22 +51,11 @@ top: 25%;
 }
 
 .searchBar{
-
-  margin-top: 300px;
-  margin-left: 20%;
-  margin-right: 20%;
-  color: white !important;
-
+  width: 100vw;
+  margin-top: -473px;
+  z-index: 5;
+  position: relative;
 }
-
-input[type=text]:focus:not([readonly]) + label {
-            color: white;
-        }
-
-        input[type=text]:focus:not([readonly]) {
-            border-bottom: 1px solid white;
-            box-shadow: 0 1px 0 0 white;
-        }
 
 .about-text{
   font-size: 24px;
@@ -72,4 +63,26 @@ input[type=text]:focus:not([readonly]) + label {
   margin-right: 90px;
   text-align: left;
 
+}
+
+iframe{
+  z-index: -5;
+  border: 0;
+}
+
+.video-container{
+  width: 80%;
+  height: 80vh;
+  z-index: -3;
+}
+#video{
+  width:100%;
+  transform:scale(1.8);
+  z-index: -55;
+
+}
+
+#about-bot{
+  margin-top: 1000px;
+  padding-bottom: 80px;
 }
