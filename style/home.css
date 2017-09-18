@@ -37,6 +37,8 @@ top: -500px;
   height: 30px;
   width: 800px;
   font-size: 20px;
+  border: 2px solid rgba(255,255,255);
+  border-radius: 5%;
 }
 
 .btn-primary{
@@ -44,6 +46,7 @@ top: -500px;
   color: white;
   background-color:rgb(121, 151, 216);
   border: solid white 2px;
+  border-radius: 10%;
   height: 35px;
   width: 100px;
   padding-top: 4px;
@@ -55,6 +58,7 @@ top: -500px;
   margin-top: -473px;
   z-index: 5;
   position: relative;
+
 }
 
 .about-text{
@@ -83,6 +87,13 @@ iframe{
 }
 
 #about-bot{
-  margin-top: 1000px;
+  margin-top: 1100px;
   padding-bottom: 80px;
+
+}
+
+.hiddenMsg{
+  color: #0060B6;
+   text-decoration: none;
+   text-decoration-style: none;
 }
